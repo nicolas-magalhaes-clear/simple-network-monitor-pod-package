@@ -1,0 +1,16 @@
+PODS:
+  - SimpleNetworkMonitor (0.1.0)
+
+DEPENDENCIES:
+  - SimpleNetworkMonitor (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleNetworkMonitor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleNetworkMonitor: 6ab3424fb96fce251b39be23e383ba71229201bb
+
+PODFILE CHECKSUM: a0286e39c17ce378be8d832d68ee7bf68410c767
+
+COCOAPODS: 1.16.2

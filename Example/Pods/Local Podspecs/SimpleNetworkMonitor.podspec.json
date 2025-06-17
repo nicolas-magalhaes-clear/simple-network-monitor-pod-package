@@ -1,0 +1,22 @@
+{
+  "name": "SimpleNetworkMonitor",
+  "version": "0.1.0",
+  "summary": "A short description of SimpleNetworkMonitor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nicolas-magalhaes-clear/SimpleNetworkMonitor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nicolas-magalhaes-clear": "nicolas.magalhaes.clear@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nicolas-magalhaes-clear/SimpleNetworkMonitor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SimpleNetworkMonitor/Classes/**/*"
+}
