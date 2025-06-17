@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SimpleNetworkMonitor_Example' do
+  pod 'SimpleNetworkMonitor', :path => '../'
+
+  target 'SimpleNetworkMonitor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
