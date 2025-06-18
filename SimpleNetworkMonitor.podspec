@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RNNetworkMonitor'
+  s.name             = 'SimpleNetworkMonitor'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SimpleNetworkMonitor.'
+  s.summary          = 'A short description of SimpleNetworkMonitor.'R
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
