@@ -269,10 +269,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SimpleNetworkMonitor_Example/Pods-SimpleNetworkMonitor_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React_Core.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleNetworkMonitor/SimpleNetworkMonitor.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React_Core.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleNetworkMonitor.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

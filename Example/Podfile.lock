@@ -1,16 +1,23 @@
 PODS:
-  - SimpleNetworkMonitor (0.1.0)
+  - React-Core (0.1.0)
+  - SimpleNetworkMonitor (0.1.0):
+    - React-Core
 
 DEPENDENCIES:
   - SimpleNetworkMonitor (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - React-Core
 
 EXTERNAL SOURCES:
   SimpleNetworkMonitor:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleNetworkMonitor: 6ab3424fb96fce251b39be23e383ba71229201bb
+  React-Core: c89e140a0ac23ed77a6094fe25d005e9c72e03b0
+  SimpleNetworkMonitor: afee812d086958f7a62b33941d1005986dd4dc2f
 
-PODFILE CHECKSUM: a0286e39c17ce378be8d832d68ee7bf68410c767
+PODFILE CHECKSUM: b20efdc96c37153d80d59d140739e3790d47045a
 
 COCOAPODS: 1.16.2
