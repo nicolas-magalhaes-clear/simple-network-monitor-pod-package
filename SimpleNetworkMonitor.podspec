@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SimpleNetworkMonitor'
+  s.name             = 'RNNetworkMonitor'
   s.version          = '0.1.0'
   s.summary          = 'A short description of SimpleNetworkMonitor.'
 
@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '18.0'
 
   s.source_files = 'SimpleNetworkMonitor/Classes/**/*'
+  s.dependency 'React-Core'
   
   # s.resource_bundles = {
   #   'SimpleNetworkMonitor' => ['SimpleNetworkMonitor/Assets/*.png']
