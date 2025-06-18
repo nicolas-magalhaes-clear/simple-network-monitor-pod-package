@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '18.0'
+platform :ios, '15.0'
 
 target 'SimpleNetworkMonitor_Example' do
   pod 'SimpleNetworkMonitor', :path => '../'
