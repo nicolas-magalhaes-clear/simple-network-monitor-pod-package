@@ -3,7 +3,6 @@ public struct ExtendedNetworkStatus {
     public let isWiFi: Bool
     public let isCellular: Bool
     // outras propriedades...
-
     public init(from status: NetworkStatus) {
         switch status {
         case .connectedViaWiFi:
@@ -21,4 +20,17 @@ public struct ExtendedNetworkStatus {
         }
         // preencha os outros com valores default ou reais se puder medir
     }
+    
 }
+
+public extension ExtendedNetworkStatus {
+    func toDictionary() -> [String: Any] {
+        return [
+            "connectionType": connectionType,
+            "isWiFi": isWiFi,
+            "isCellular": isCellular
+            // inclua outras propriedades aqui se você adicionar mais
+        ]
+    }
+}
+

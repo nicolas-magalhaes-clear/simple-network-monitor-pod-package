@@ -11,6 +11,7 @@
 		1F8F5294DE794ABB11101D0FD40398B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		25F98551253D8E2FBCF1EFA6404A31B9 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E19AD53B30E8905F90A2CBC7A48981 /* NetworkStatus.swift */; };
 		3DE5B89149D13207A85978374DC2DD83 /* NetworkMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5B4A3D48B573E321F884C80E1E714 /* NetworkMonitorDelegate.swift */; };
+		4E23A9512E0344FB0025FD26 /* ExtendedNetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E23A9502E0344FB0025FD26 /* ExtendedNetworkStatus.swift */; };
 		4EE5BC212E01C60500307956 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5BC202E01C5FD00307956 /* NotificationName.swift */; };
 		6012049CB1C9030D24D9781DB566437C /* Pods-SimpleNetworkMonitor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE21851DD0E31A31F126C9A58616A4A /* Pods-SimpleNetworkMonitor_Example-dummy.m */; };
 		6CBF356F193A168B5C50118EE5DB317D /* SimpleNetworkMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57012A45E381AAA3592EE9262039B941 /* SimpleNetworkMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +49,7 @@
 		2C70295E2DA9C0D92040CC08C166B968 /* Pods-SimpleNetworkMonitor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworkMonitor_Tests-Info.plist"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F627B1CD80B2F93AC9BDEC618825BEB /* SimpleNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleNetworkMonitor.release.xcconfig; sourceTree = "<group>"; };
+		4E23A9502E0344FB0025FD26 /* ExtendedNetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtendedNetworkStatus.swift; path = SimpleNetworkMonitor/Classes/ExtendedNetworkStatus.swift; sourceTree = "<group>"; };
 		4EE5BC202E01C5FD00307956 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		57012A45E381AAA3592EE9262039B941 /* SimpleNetworkMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleNetworkMonitor-umbrella.h"; sourceTree = "<group>"; };
 		5A54947CA4BCD91DBEC4446A4865DD96 /* Pods-SimpleNetworkMonitor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworkMonitor_Example-Info.plist"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		162789C5DF7A8691258D4414A120B5A1 /* SimpleNetworkMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				4E23A9502E0344FB0025FD26 /* ExtendedNetworkStatus.swift */,
 				4EE5BC202E01C5FD00307956 /* NotificationName.swift */,
 				F06659CA85010DE13D56600DC227449E /* NetworkMonitor.swift */,
 				CEB5B4A3D48B573E321F884C80E1E714 /* NetworkMonitorDelegate.swift */,
@@ -326,6 +329,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3D6C852091E9289D234A91C8C8364F29 = {
+						LastSwiftMigration = 1630;
+					};
+					503DCAFA5DF8D4044774C04B645E8803 = {
+						LastSwiftMigration = 1630;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -397,6 +408,7 @@
 				3DE5B89149D13207A85978374DC2DD83 /* NetworkMonitorDelegate.swift in Sources */,
 				25F98551253D8E2FBCF1EFA6404A31B9 /* NetworkStatus.swift in Sources */,
 				E8D64F7139EEF5B438B3CB300045B322 /* SimpleNetworkMonitor-dummy.m in Sources */,
+				4E23A9512E0344FB0025FD26 /* ExtendedNetworkStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +470,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAECCE5906A011BA10572FA96D61167A /* Pods-SimpleNetworkMonitor_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -483,6 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -494,7 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C08200AE3055C9106591FFAD2D2767C /* Pods-SimpleNetworkMonitor_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -519,6 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -591,7 +605,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19BB51FBA013FD1E3C10C42135B6D27A /* Pods-SimpleNetworkMonitor_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -616,6 +630,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -626,7 +642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D59EDF60C0A94266E0CB7C27D7FC1B7 /* Pods-SimpleNetworkMonitor_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -651,6 +667,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
