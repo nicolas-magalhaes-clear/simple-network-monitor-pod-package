@@ -12,6 +12,7 @@
 		25F98551253D8E2FBCF1EFA6404A31B9 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E19AD53B30E8905F90A2CBC7A48981 /* NetworkStatus.swift */; };
 		3DE5B89149D13207A85978374DC2DD83 /* NetworkMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5B4A3D48B573E321F884C80E1E714 /* NetworkMonitorDelegate.swift */; };
 		4EE5BC212E01C60500307956 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5BC202E01C5FD00307956 /* NotificationName.swift */; };
+		4EE5BC232E01F30900307956 /* NetworkMonitorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5BC222E01F30200307956 /* NetworkMonitorModule.swift */; };
 		6012049CB1C9030D24D9781DB566437C /* Pods-SimpleNetworkMonitor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE21851DD0E31A31F126C9A58616A4A /* Pods-SimpleNetworkMonitor_Example-dummy.m */; };
 		6CBF356F193A168B5C50118EE5DB317D /* SimpleNetworkMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57012A45E381AAA3592EE9262039B941 /* SimpleNetworkMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		861B6CB9F776349BE9C4DF5FA7A42AE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
@@ -49,6 +50,7 @@
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F627B1CD80B2F93AC9BDEC618825BEB /* SimpleNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleNetworkMonitor.release.xcconfig; sourceTree = "<group>"; };
 		4EE5BC202E01C5FD00307956 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		4EE5BC222E01F30200307956 /* NetworkMonitorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorModule.swift; sourceTree = "<group>"; };
 		57012A45E381AAA3592EE9262039B941 /* SimpleNetworkMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleNetworkMonitor-umbrella.h"; sourceTree = "<group>"; };
 		5A54947CA4BCD91DBEC4446A4865DD96 /* Pods-SimpleNetworkMonitor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworkMonitor_Example-Info.plist"; sourceTree = "<group>"; };
 		5BCF63DAD4F4F3F1842F5DE63C7BD801 /* SimpleNetworkMonitor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleNetworkMonitor-Info.plist"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		162789C5DF7A8691258D4414A120B5A1 /* SimpleNetworkMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				4EE5BC222E01F30200307956 /* NetworkMonitorModule.swift */,
 				4EE5BC202E01C5FD00307956 /* NotificationName.swift */,
 				F06659CA85010DE13D56600DC227449E /* NetworkMonitor.swift */,
 				CEB5B4A3D48B573E321F884C80E1E714 /* NetworkMonitorDelegate.swift */,
@@ -395,6 +398,7 @@
 				4EE5BC212E01C60500307956 /* NotificationName.swift in Sources */,
 				C8ED408746E14B6A9958C3D84C633476 /* NetworkMonitor.swift in Sources */,
 				3DE5B89149D13207A85978374DC2DD83 /* NetworkMonitorDelegate.swift in Sources */,
+				4EE5BC232E01F30900307956 /* NetworkMonitorModule.swift in Sources */,
 				25F98551253D8E2FBCF1EFA6404A31B9 /* NetworkStatus.swift in Sources */,
 				E8D64F7139EEF5B438B3CB300045B322 /* SimpleNetworkMonitor-dummy.m in Sources */,
 			);
