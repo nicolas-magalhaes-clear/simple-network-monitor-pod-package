@@ -37,9 +37,11 @@ public class NetworkMonitor {
 
                 DispatchQueue.main.async {
                     self.delegate?.networkStatusDidChange(status)
+
+                    let extendedStatus = ExtendedNetworkStatus(from: path)
                     NotificationCenter.default.post(
                         name: .networkStatusDidChange,
-                        object: status
+                        object: extendedStatus.toDictionary()
                     )
                 }
             }
